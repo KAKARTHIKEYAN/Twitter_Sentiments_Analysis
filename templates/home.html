@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css')}}">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Twitter Sentiment Analysis</h1>
+        </div>
+      </div>
+    </header>
+      <section id="showcase">
+          <div class="container">
+            <h1>Enter the Topic of Tweets for Sentiment Analysis</h1>
+            <form action="/predict" method="POST">
+
+                <textarea name="Tweet" placeholder="Search Key " rows="2" cols="50"></textarea><br>
+                <textarea name="Count" placeholder="Tweet Count  " rows="2" cols="50"></textarea><br>
+                <input type="submit" value="Analyse" class="button">
+            </form>
+        </div>
+      </section>
+    <footer>
+          <br>
+          <a href="https://github.com/KAKARTHIKEYAN/Twitter_Sentiments_Analysis"><img src="../static/github.png" alt="View Github" style="width:42px;height:42px;"></a><br>
+<!--          <p>Happy Learning</p>-->
+
+
+      </footer>
+
+  </body>
+</html>
